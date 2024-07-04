@@ -6,3 +6,6 @@ title.creat("Primeira pagina");
 
 const image = new Image();
 image.insertSpaceImage();
+
+const image2 = new Image();
+image2.insertSpaceImage2();

@@ -14,6 +14,10 @@ module.exports={
                 test:/\.css$/,
                 //indicando qual loaders deve ser utilizado para rodar o css
                 use:['style-loader','css-loader']
+            },
+            {
+                test:/\.(png|jpg|jpeg)$/,
+                use:['file-loader']
             }
         ]
     }

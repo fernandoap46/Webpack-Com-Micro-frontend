@@ -3,6 +3,8 @@ import Image from "./components/image.js";
 import Button from "./components/button.js";
 import warning from './templates/warning.html';
 import './styles/warning.css';
+import fraseTxt from './files/frase.txt';
+import descricao from './files/descricao.json';
 
 const title= new Title();
 title.creat("Primeira pagina");
@@ -28,3 +30,12 @@ console.log(teste);
 // Import de HTML
 const body = document.querySelector('body');
 body.innerHTML += warning;
+
+// Import arquivo de texto
+const frase = fraseTxt;
+console.log(frase);
+console.log(frase.toUpperCase());
+
+// Import JSON
+const pessoa = descricao;
+console.log(pessoa);

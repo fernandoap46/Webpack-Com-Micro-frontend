@@ -46,7 +46,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _components_title_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/title.js */ \"./src/components/title.js\");\n/* harmony import */ var _components_image_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/image.js */ \"./src/components/image.js\");\n/* harmony import */ var _components_button_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/button.js */ \"./src/components/button.js\");\n/* harmony import */ var _templates_warning_html__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./templates/warning.html */ \"./src/templates/warning.html\");\n/* harmony import */ var _styles_warning_css__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./styles/warning.css */ \"./src/styles/warning.css\");\nfunction _objectWithoutProperties(e, t) { if (null == e) return {}; var o, r, i = _objectWithoutPropertiesLoose(e, t); if (Object.getOwnPropertySymbols) { var n = Object.getOwnPropertySymbols(e); for (r = 0; r < n.length; r++) o = n[r], t.indexOf(o) >= 0 || {}.propertyIsEnumerable.call(e, o) && (i[o] = e[o]); } return i; }\nfunction _objectWithoutPropertiesLoose(r, e) { if (null == r) return {}; var t = {}; for (var n in r) if ({}.hasOwnProperty.call(r, n)) { if (e.indexOf(n) >= 0) continue; t[n] = r[n]; } return t; }\n\n\n\n\n\nvar title = new _components_title_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"]();\ntitle.creat(\"Primeira pagina\");\nvar image = new _components_image_js__WEBPACK_IMPORTED_MODULE_1__[\"default\"]();\nimage.insertSpaceImage();\nvar image2 = new _components_image_js__WEBPACK_IMPORTED_MODULE_1__[\"default\"]();\nimage2.insertSpaceImage2();\nvar button = new _components_button_js__WEBPACK_IMPORTED_MODULE_2__[\"default\"]();\nbutton.creat();\n\n// Babel Spread\nvar obj = {\n  a: 1,\n  b: 2,\n  c: 3,\n  d: 4,\n  e: 99\n};\nvar a = obj.a,\n  b = obj.b,\n  teste = _objectWithoutProperties(obj, [\"a\", \"b\"]);\nconsole.log(a);\nconsole.log(b);\nconsole.log(teste);\n\n// Import de HTML\nvar body = document.querySelector('body');\nbody.innerHTML += _templates_warning_html__WEBPACK_IMPORTED_MODULE_3__[\"default\"];\n\n//# sourceURL=webpack://2_loaders/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _components_title_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/title.js */ \"./src/components/title.js\");\n/* harmony import */ var _components_image_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/image.js */ \"./src/components/image.js\");\n/* harmony import */ var _components_button_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/button.js */ \"./src/components/button.js\");\n/* harmony import */ var _templates_warning_html__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./templates/warning.html */ \"./src/templates/warning.html\");\n/* harmony import */ var _styles_warning_css__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./styles/warning.css */ \"./src/styles/warning.css\");\n/* harmony import */ var _files_frase_txt__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./files/frase.txt */ \"./src/files/frase.txt\");\n/* harmony import */ var _files_descricao_json__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./files/descricao.json */ \"./src/files/descricao.json\");\nfunction _objectWithoutProperties(e, t) { if (null == e) return {}; var o, r, i = _objectWithoutPropertiesLoose(e, t); if (Object.getOwnPropertySymbols) { var n = Object.getOwnPropertySymbols(e); for (r = 0; r < n.length; r++) o = n[r], t.indexOf(o) >= 0 || {}.propertyIsEnumerable.call(e, o) && (i[o] = e[o]); } return i; }\nfunction _objectWithoutPropertiesLoose(r, e) { if (null == r) return {}; var t = {}; for (var n in r) if ({}.hasOwnProperty.call(r, n)) { if (e.indexOf(n) >= 0) continue; t[n] = r[n]; } return t; }\n\n\n\n\n\n\n\nvar title = new _components_title_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"]();\ntitle.creat(\"Primeira pagina\");\nvar image = new _components_image_js__WEBPACK_IMPORTED_MODULE_1__[\"default\"]();\nimage.insertSpaceImage();\nvar image2 = new _components_image_js__WEBPACK_IMPORTED_MODULE_1__[\"default\"]();\nimage2.insertSpaceImage2();\nvar button = new _components_button_js__WEBPACK_IMPORTED_MODULE_2__[\"default\"]();\nbutton.creat();\n\n// Babel Spread\nvar obj = {\n  a: 1,\n  b: 2,\n  c: 3,\n  d: 4,\n  e: 99\n};\nvar a = obj.a,\n  b = obj.b,\n  teste = _objectWithoutProperties(obj, [\"a\", \"b\"]);\nconsole.log(a);\nconsole.log(b);\nconsole.log(teste);\n\n// Import de HTML\nvar body = document.querySelector('body');\nbody.innerHTML += _templates_warning_html__WEBPACK_IMPORTED_MODULE_3__[\"default\"];\n\n// Import arquivo de texto\nvar frase = _files_frase_txt__WEBPACK_IMPORTED_MODULE_5__[\"default\"];\nconsole.log(frase);\nconsole.log(frase.toUpperCase());\n\n// Import JSON\nvar pessoa = _files_descricao_json__WEBPACK_IMPORTED_MODULE_6__;\nconsole.log(pessoa);\n\n//# sourceURL=webpack://2_loaders/./src/index.js?");
 
 /***/ }),
 
@@ -107,6 +107,16 @@ eval("\n\nmodule.exports = function (i) {\n  return i[1];\n};\n\n//# sourceURL=w
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n// Module\nvar code = \"<div>\\r\\n  <p class=\\\"warning\\\">Você não pode acessar esta página!</p>\\r\\n</div>\\r\\n\";\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (code);\n\n//# sourceURL=webpack://2_loaders/./src/templates/warning.html?");
+
+/***/ }),
+
+/***/ "./src/files/frase.txt":
+/*!*****************************!*\
+  !*** ./src/files/frase.txt ***!
+  \*****************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (\"O webpack e muito legal!!\");\n\n//# sourceURL=webpack://2_loaders/./src/files/frase.txt?");
 
 /***/ }),
 
@@ -217,6 +227,16 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"88ed7fe7c6ea6b381995405c1e0630e9.jpg\");\n\n//# sourceURL=webpack://2_loaders/./src/img/space2.jpg?");
+
+/***/ }),
+
+/***/ "./src/files/descricao.json":
+/*!**********************************!*\
+  !*** ./src/files/descricao.json ***!
+  \**********************************/
+/***/ ((module) => {
+
+eval("module.exports = /*#__PURE__*/JSON.parse('{\"nome\":\"Matheus\",\"idade\":29,\"profissao\":\"Programador\"}');\n\n//# sourceURL=webpack://2_loaders/./src/files/descricao.json?");
 
 /***/ })
 

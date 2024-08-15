@@ -21,21 +21,29 @@ module.exports = {
     historyApiFallback: true
   },
   resolve: {
-    extensions: [".jsx", ".js", ".json"]
+    extensions: [".tsx", ".ts", ".jsx", ".js", ".json"]
   },
   module: {
     rules: [
       {
-        test: /\.jsx?$/,
+        test: /\.(js|jsx|ts|tsx)$/,
         loader: require.resolve("babel-loader"),
         options: {
-          presets: [require.resolve("@babel/preset-react")]
-        }
+          presets: [
+            require.resolve("@babel/preset-react"),
+            require.resolve("@babel/preset-typescript")
+          ]
+        },
+        exclude: /node_modules/
       },
       {
         test: /\.css$/,
         use: ['style-loader', 'css-loader']
-      }
+      },
+      {
+        test: /\.(png|jpe?g|gif|svg)$/i,
+        type: 'asset/resource',
+      },
     ]
   },
   plugins: [
@@ -49,6 +57,7 @@ module.exports = {
       remotes: {
         HomeApp: 'HomeApp@http://localhost:9002/remoteEntry.js',
         ContactApp: 'ContactApp@http://localhost:9003/remoteEntry.js',
+        ConsultOwnPickingApp: 'ConsultOwnPickingApp@http://localhost:9004/remoteEntry.js',
       }
     })
   ]

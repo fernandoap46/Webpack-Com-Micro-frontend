@@ -11,7 +11,7 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "devDependencies": {
+  "dependencies": {
     "@babel/core": "^7.24.9",
     "@babel/preset-react": "^7.24.7",
     "babel-loader": "^9.1.3",

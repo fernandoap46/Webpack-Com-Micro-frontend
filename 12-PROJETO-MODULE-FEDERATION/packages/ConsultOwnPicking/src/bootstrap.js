@@ -1,0 +1,12 @@
+import ConsultOwnPicking from './ConsultOwnPicking';
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+const root = ReactDOM.createRoot(document.querySelector('#root'));
+
+root.render(
+    <React.StrictMode>
+      <ConsultOwnPicking />
+    </React.StrictMode>
+  );

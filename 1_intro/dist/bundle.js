@@ -1,1 +1,0 @@
-(()=>{"use strict";const o=function(o){console.log(`olá ${o}`)};console.log("mudamos a config novamente 3"),o("fapereira"),o("Fernando")})();
